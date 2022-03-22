@@ -36,14 +36,28 @@ Unsolder (and unscrew) these components from the mainboard. We'll need them for 
 ![](pictures/photo_2021-01-13_22-03-26.jpg)
 ![](pictures/photo_2021-01-13_22-03-27.jpg)
 
+Your trimmer pots might also be a different style, but check that they are the same 5k ohm value ("502").
+
+![](pictures/5k-pots.jpg)
+
 Install all unsoldered components on the replacement mainboard.
 
 ![](pictures/photo_2021-01-13_22-03-28.jpg)
+
+This little tab on the volume knob probably won't fit all of the way through the PCB because it is thicker than the original.  You can trim the hook part off.
+
+![](pictures/knob1.jpg)
+![](pictures/knob2.jpg)
+![](pictures/knob3.jpg)
 
 Unsolder the speaker cables (black and white) from the flyback PCB. Solder them to the replacement PCB (take care of polarity. White is closer to the ESP32).
 Remove all other cables from the flyback PCB except for blue, yellow, black and purple.
 
 ![](pictures/photo_2021-01-13_22-03-29.jpg)
+
+Your speaker wires might not be black and white, but both black.  There is a polarity of the speaker, and the positive (+) was marked with red paint/glyptol.  You might also have to extend your speaker wires.
+
+![](pictures/speaker-polarity.jpg)
 
 Solder the blue (flyback signal) and yellow (blanking) to the new mainboard.
 Do the same for purple (supply) and black (GND).
@@ -53,6 +67,22 @@ Do the same for purple (supply) and black (GND).
 Next, connect the deflection coil wires (purple, white, red and blue). 
 
 ![](pictures/photo_2021-01-13_22-03-32.jpg)
+
+Here are more pictures of the assembled unit.
+:mag: CLICK FOR A LARGER IMAGE!
+
+[![](pictures/assembled1.jpg)](pictures/assembled1-large.jpg)
+[![](pictures/assembled2.jpg)](pictures/assembled2-large.jpg)
+
+:pencil2: If you want to slowly bring up your board and not let the magic smoke out, here are some things you can do:
+
+- Use a current limited power supply and make a cable that plugs into the JST2.0 connector.  Set your power supply to 4V at 500mA.
+- When the device normally powers on it draws about 300mA.  If it draws 500mA you probably have a short circuit somewhere.
+- Check the +3.3V output (it should be about +3.3V)
+- Check the -3.3V output (it should be about -3.7V)
+- :warning: Check the FLYBACK output, it should be toggling at 16kHz @ 40% duty cycle.  If it's continuously LOW, it will make the power supply draw infinite amounts of current.  It should be pulled up to +3.3V when the ESP32 is reset/programming via R50.
+
+You'll proabably want to play with it for a while and make sure everything is working well before moving on to the final steps.
 
 You can now plug in the batteries (make sure the watchman is turned off) and screw the mainboard back in place. You need two screws for this (mind the arrows on the back of the PCB).
 
