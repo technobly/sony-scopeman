@@ -4,6 +4,8 @@ Everything you need to order parts for your Sony Scopeman / Vectorboy!
 
 ## PCB
 
+:warning: **NOTE: Be sure to order the PCB thinner than standard, 0.040" (1.0mm) should be good.**  If you end up ordering as 0.062" (1.6mm), [you will have to make a bunch of modifications, but it can be done.](thick-pcb-mods.md)
+
 ### JLCPCB
 
 All parts including PCB's for 2 complete boards was $159.82 ($80 each).
