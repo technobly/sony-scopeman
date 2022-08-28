@@ -17,4 +17,8 @@ You will have to recess the area of the PCB that the antenna rests on.  This is 
 
 ![](../../pictures/antenna-recessed.jpg)
 
+The case back bosses need to have 1.0mm of material removed from them.  This is what they look like before modification (sorry I forgot to take a picture after modding... I did this on my CNC machine, but could easily be done with a dremel tool)
+
+![](../../pictures/case-back-bosses.jpg)
+
 Something really handy for these mods is the [Dremel 1/16" ballnose cutter (#109)](https://www.amazon.com/Dremel-109-Engraving-Cutter-16-inch/dp/B0006N72X4).  I got mine in an [11 piece Carving/Engraving Kit](https://www.amazon.com/Dremel-729-01-Engraving-Accessories-11-Piece/dp/B09FP387V2).
