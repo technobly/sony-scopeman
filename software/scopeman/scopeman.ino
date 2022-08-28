@@ -59,12 +59,22 @@ static const i2s_pin_config_t pin_config = {
 };
 
 uint32_t calc_buf_pos(int16_t x, int16_t y) { // +/- 1024
-  uint16_t x_i = x * 2;
-  uint16_t y_i = y * 2;
-  uint32_t buf;
+    // verticle keystone correction: \ / -> | |
+    int32_t x_tmp = 0;
+    // int32_t y_tmp = 0;
+    x_tmp = int32_t(float(x) * (1.0f - (0.2 * (float(y)/2600.0f))));
+    if (x_tmp > 3500) {
+        x_tmp = 3500;
+    } else if (x_tmp < -3500) {
+        x_tmp = -3500;
+    }
+    x = x_tmp;
 
-  buf = x_i | y_i << 16;
-  return buf;
+    uint16_t x_i = x*2;
+    uint16_t y_i = y*2;
+    uint32_t buf;
+    buf = x_i | y_i << 16;
+    return buf;
 }
 
 float x = 0.01;
