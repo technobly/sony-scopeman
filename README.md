@@ -107,6 +107,6 @@ A2DP Arduino lib for ESP32: https://github.com/pschatzmann/ESP32-A2DP
 
 # Ordering
 
-See the [BOM README.md](hardware/bom-vectorboy-v1.0/README.md)
+See the [BOM README.md](hardware/bom-vectorboy-v1.3/README.md)
 
-:warning: **NOTE: Be sure to order the PCB thinner than standard, 0.040" (1.0mm) should be good.**  If you end up ordering as 0.062" (1.6mm), [you will have to make a bunch of modifications, but it can be done.](hardware/bom-vectorboy-v1.0/thick-pcb-mods.md)
+:warning: **NOTE: Be sure to order the PCB thinner than standard, 0.040" (1.0mm) should be good.**  If you end up ordering as 0.062" (1.6mm), [you will have to make a bunch of modifications, but it can be done.](hardware/bom-vectorboy-v1.3/thick-pcb-mods.md)

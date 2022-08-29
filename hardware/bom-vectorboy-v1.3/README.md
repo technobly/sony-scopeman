@@ -1,4 +1,4 @@
-# Vectorboy v1.0 PCB & BOM
+# Vectorboy v1.3 PCB & BOM
 
 Everything you need to order parts for your Sony Scopeman / Vectorboy!
 
@@ -15,23 +15,25 @@ I got a brand new Sony Watchman FD-10A from eBay for $30 shipped.
 I made some minor tweaks to the silkscreen and ordered PCBs from JLCPCB.
 
 - Added "JLCJLCJLCJLC" to the back side of the PCB for part number placement
-- Moved "PURPLE / BLACK" text for readability 
+- Moved "PURPLE / BLACK" text for readability
 - Changed main text to say "Vectorboy v1.0" for fun and motivation
 - I ordered 20 PCBs in White soldermask with Black silkscreen with a stencil for $34.38 shipped.
 
-Order PCB's by using the included [gerbers-vectorboy-v1.0.zip](../gerber-vectorboy-V1.0/) and uploading those with all of the necessary specs [JLCPCB](https://jlcpcb.com)
+Order PCB's by using the included [gerbers-vectorboy-v1.3.zip](../gerber-vectorboy-v1.3/) and uploading those with all of the necessary specs [JLCPCB](https://jlcpcb.com)
+
+Centroid/Position data [is here](../gerber-vectorboy-v1.3/pos.csv) for ordering assembled boards.  (Note: I have not used this file myself, just trying to keep it updated from the original)
 
 ## BOM
 
 ### LCSC
 
-Most of the parts are included in [LCSC-Bom-Vectorboy-v1.0.csv](LCSC-Bom-Vectorboy-v1.0.csv)
+Most of the parts are included in [LCSC-Bom-Vectorboy-v1.3.csv](LCSC-Bom-Vectorboy-v1.3.csv)
 
 However, some of those parts were out of stock and I had to get them at Digikey or eBay.
 
 Here is the exact order that was exported
 
-- [LCSC-Exported-Vectorboy-v1.0.csv](LCSC-Exported-Vectorboy-v1.0.csv) - $33.14
+- [LCSC-Exported-Vectorboy-v1.3.csv](LCSC-Exported-Vectorboy-v1.3.csv) - $33.14
 
 To import this:
 
