@@ -860,6 +860,17 @@ F 3 "~" H 13750 1900 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
+L Transistor_BJT:PZT3906 Q2
+U 1 1 5F9450FB
+P 14400 2250
+F 0 "Q2" H 14590 2204 50  0000 L CNN
+F 1 "STN951" H 14590 2295 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 14600 2175 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3906.pdf" H 14400 2250 50  0001 L CNN
+	1    14400 2250
+	1    0    0    1   
+$EndComp
+$Comp
 L Device:C_Small C5
 U 1 1 5F947887
 P 13900 2000
@@ -1056,6 +1067,28 @@ F 2 "Resistor_SMD:R_0603_1608Metric" H 13750 3550 50  0001 C CNN
 F 3 "~" H 13750 3550 50  0001 C CNN
 	1    13750 3550
 	0    1    1    0   
+$EndComp
+$Comp
+L Transistor_BJT:PZT3904 Q3
+U 1 1 5F9AE99B
+P 14400 3400
+F 0 "Q3" H 14590 3446 50  0000 L CNN
+F 1 "STN851" H 14590 3355 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 14600 3325 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf" H 14400 3400 50  0001 L CNN
+	1    14400 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:PZT3906 Q4
+U 1 1 5F9AE9A1
+P 14400 3900
+F 0 "Q4" H 14590 3854 50  0000 L CNN
+F 1 "STN951" H 14590 3945 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 14600 3825 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3906.pdf" H 14400 3900 50  0001 L CNN
+	1    14400 3900
+	1    0    0    1   
 $EndComp
 $Comp
 L Device:C_Small C9
@@ -3233,80 +3266,6 @@ Text Notes 13400 7850 0    50   ~ 0
 PWM: 16kHz with 40% on cycle.\nMust not be low!
 Wire Wire Line
 	6900 8400 7100 8400
-Connection ~ 14500 3200
-Connection ~ 14500 3600
-Connection ~ 14200 3400
-Connection ~ 14500 3700
-$Comp
-L Transistor_BJT:PZT3904 Q3
-U 1 1 5F9AE99B
-P 14400 3400
-F 0 "Q3" H 14590 3446 50  0000 L CNN
-F 1 "STN851" H 14590 3355 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 14600 3325 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf" H 14400 3400 50  0001 L CNN
-	1    14400 3400
-	1    0    0    -1  
-$EndComp
-$Comp
-L Transistor_BJT:PZT3906 Q4
-U 1 1 5F9AE9A1
-P 14400 3900
-F 0 "Q4" H 14590 3854 50  0000 L CNN
-F 1 "STN951" H 14590 3945 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 14600 3825 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3906.pdf" H 14400 3900 50  0001 L CNN
-	1    14400 3900
-	1    0    0    1   
-$EndComp
-$Comp
-L Transistor_BJT:MMBT3906 Q10
-U 1 1 5FA18B5D
-P 14400 3900
-F 0 "Q10" H 14591 3854 50  0001 L CNN
-F 1 "STN951" H 14591 3945 50  0001 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 14600 3825 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3906.pdf" H 14400 3900 50  0001 L CNN
-	1    14400 3900
-	1    0    0    1   
-$EndComp
-$Comp
-L Transistor_BJT:MMBT3904 Q9
-U 1 1 5FA2B613
-P 14400 3400
-F 0 "Q9" H 14591 3446 50  0001 L CNN
-F 1 "PZT3904" H 14591 3355 50  0001 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 14600 3325 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf" H 14400 3400 50  0001 L CNN
-	1    14400 3400
-	1    0    0    -1  
-$EndComp
-$Comp
-L Transistor_BJT:PZT3906 Q2
-U 1 1 5F9450FB
-P 14400 2250
-F 0 "Q2" H 14590 2204 50  0000 L CNN
-F 1 "STN951" H 14590 2295 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 14600 2175 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3906.pdf" H 14400 2250 50  0001 L CNN
-	1    14400 2250
-	1    0    0    1   
-$EndComp
-Connection ~ 14500 2050
-$Comp
-L Transistor_BJT:MMBT3906 Q8
-U 1 1 5FA1773A
-P 14400 2250
-F 0 "Q8" H 14591 2204 50  0001 L CNN
-F 1 "PZT3906" H 14591 2295 50  0001 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 14600 2175 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3906.pdf" H 14400 2250 50  0001 L CNN
-	1    14400 2250
-	1    0    0    1   
-$EndComp
-Connection ~ 14500 1550
-Connection ~ 14500 1950
-Connection ~ 14200 1750
 $Comp
 L Transistor_BJT:PZT3904 Q1
 U 1 1 5F94472D
@@ -3314,17 +3273,6 @@ P 14400 1750
 F 0 "Q1" H 14590 1796 50  0000 L CNN
 F 1 "STN851" H 14590 1705 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 14600 1675 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf" H 14400 1750 50  0001 L CNN
-	1    14400 1750
-	1    0    0    -1  
-$EndComp
-$Comp
-L Transistor_BJT:MMBT3904 Q7
-U 1 1 5FA28349
-P 14400 1750
-F 0 "Q7" H 14591 1796 50  0001 L CNN
-F 1 "PZT3904" H 14591 1705 50  0001 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 14600 1675 50  0001 L CIN
 F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf" H 14400 1750 50  0001 L CNN
 	1    14400 1750
 	1    0    0    -1  
