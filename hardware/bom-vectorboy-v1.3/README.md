@@ -41,6 +41,8 @@ To import this:
 - Set the columns for "LCSC Part Number", "Customer Part Number" (these are the ref des.), "Quantity"
 - This will add enough parts for 2 complete boards (adjust as necessary)
 
+> NOTE: if you plan to build these by hand, you might want to import the [LCSC-Exported-Condensed-Designators-Vectorboy-v1.3.csv](LCSC-Exported-Condensed-Designators-Vectorboy-v1.3.csv) BOM which has Condensed Designators in decending order (e.g. "C37,30,28-25,19,14,11,8,2") that will fit on the bags of parts you'll receive.  DO NOT use this one if you are planning on having JLCPCB assemble your boards for you.
+
 ### Digikey
 
 A few parts needed to be ordered from Digikey
